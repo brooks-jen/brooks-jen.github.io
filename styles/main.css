@@ -1,12 +1,12 @@
 header {
-  background: url(../images/heroimage.jpg) center / cover;
   height: 60vh;
   justify-content: center;
   text-align: center;
 }
 
 body {
-
+    background-color: #FCDFE5;
+    transition: color 800ms ease-out 0ms, background 800ms ease-out 0s;
 }
 
 h1 {
