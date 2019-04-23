@@ -9,45 +9,46 @@
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/project.css">
   </head>
   <body>
-      <header class="header">
-        <!-- navigation -->
-        <div class="shell">
+    <header class="header">
+      <!-- nav -->
+      <nav class="nav-menu">
+        <div class="nav-logo">
           <a href="index.html">
             <img src="images/bluestripeslogo.svg" alt="Logo">
           </a>
-        <nav class="nav menu">
-          <ul>
-            <li class="nav-item">
-              <a href="work.asp">Work</a>
-            </li>
-            <li class="nav-item">
-              <a href="About.asp">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="Resume.asp">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a href="Contact.asp">Contact</a>
-            </li>
-          </ul>
-        </nav>
         </div>
-      </header>
-        <!-- hero -->
-        <main class="container-fluid">
-          <div id="hero">
-            <h1 class="hero-title"> Quartz </h1>
-            <p class="hero-body"> Perfect for storing all of your gems and ideas!</p>
-            <img src="images/heroimage.png" alt="Hero-Image">
+          <div class="all-menu-items">
+            <div class="nav-item">
+              <a href="work.asp">Work</a>
+            </div>
+            <div class="nav-item">
+              <a href="About.asp">About</a>
+            </div>
+            <div class="nav-item">
+              <a href="Resume.asp">Resume</a>
+            </div>
+            <div class="nav-item">
+              <a href="Contact.asp">Contact</a>
+            </div>
           </div>
-        </main>
+      </nav>
+    </header>
+        <!-- hero -->
+          <div class="hero-container">
+            <h1> Quartz </h1>
+            <p class="herotext"> Perfect for storing all of your gems and ideas! </p>
+              <!-- <p class="hero-body"> Perfect for storing all of your gems and ideas!</p>
+                <button> Button </button>
+                  <img src="images/heroimage.png" alt="Hero-Image"> !-->
+          </div>
+
 
         <!-- Sticky Nav -->
-        <nav class="Nav">
-          <ul class="Nav">
+        <nav class="navBackground">
+          <ul class="navItem">
             <li class="subnav">
               <a href="#overview"> Overview </a>
             </li>
@@ -67,45 +68,62 @@
         </nav>
         <!-- overview -->
         <section id="overview" class="anchor">
-          <div class="row">
-            <img src="images/DiceIcon.png" alt="Role Icon">
-            <h3 class="smalltitle"> Role </h3>
-              <p> User Experience <br> User Interface <br> User Research <br> Development <br> Strategy <br> Branding </p>
-                <div class="images">
+          <div class="overviewcontainer">
+            <p> Overview </p>
+              <div class="image-a">
+                  <img src="images/DiceIcon.png" alt="Role Icon">
+                  <h3 class="smalltitle"> Role </h3>
+                    <p> User Experience <br> User Interface <br> User Research <br> Development <br> Strategy <br> Branding </p>
+                </div>
+                <div class="image-b">
                   <img src="images/LightiningBoltIcon.png" alt="Tools Icon">
+                  <h3 class="smalltitle"> Tools </h3>
+                    <p> Sketch <br> Adobe Illustrator <br> Figma <br> Balsamique <br> Maze <br> Loom </p>
                 </div>
-            <h3 class="smalltitle"> Tools </h3>
-              <p> Sketch <br> Adobe Illustrator <br> Figma <br> Balsamique <br> Maze <br> Loom </p>
-                <div class="images">
+                <div class="image-c">
                   <img src="images/CassetIcon.png" alt="Deliverables Icon">
+                  <h3 class="smalltitle"> Deliverables </h3>
+                    <p> User Surveys <br> User Personas <br> Competitive Analysis <br> User Stories <br> User Flows <br> Paper Prototype <br> Wireframes <br> User Testing <br> High-Fidelity Mockups </p>
                 </div>
-            <h3 class="smalltitle"> Deliverables </h3>
-              <p> User Surveys <br> User Personas <br> Competitive Analysis <br> User Stories <br> User Flows <br> Paper Prototype <br> Wireframes <br> User Testing <br> High-Fidelity Mockups </p>
           </div>
-          <div class="row">
+
+
+
+          <div class="summarycontainer">
+            <div class="What">
             <h3 class="smalltitle"> What is Quartz? </h3>
               <p> Quartz is a file storage software as a solution (SaaS) company that uses the cloud so users can access their data from any location or device. Quartz allows users to easily save and share their inspiration with others. </p>
+            </div>
+            <div class="Problem">
               <h3 class="smalltitle"> Problem </h3>
                 <p> Saving information directly to a device isn’t practical for users on the move. With multiple devices being used and the need for effortless collaboration, cloud storage still has room to grow for users needs. Difficult set up processes and confusing interfaces are some of the major design issues facing this market. Many new users are too intimidated by set up process to try it out, while existing users aren’t satisfied with the current offerings visual organization. </p>
+              </div>
+              <div class="Solution">
               <h3 class="smalltitle"> Solution </h3>
                 <p> Quartz sets out to eliminate these headaches and present a seamless approach for existing and new users. By designing a clearly organized dashboard, users are free to create and collaborate on projects without being bogged down by clunky interfaces. </p>
-          </div>
-            <div class="images">
+              </div>
+            <div class="image-d">
               <img src="images/DonutBearLaptop.png" alt="Quartz Device Example">
             </div>
+          </div>
         </section>
-        <!-- Research -->
+
         <section id="research" class="anchor">
-        <div class="icon">
+        <div class="Researchcontainer">
+          <div class="ResearchIcon">
           <img src="images/Magnifyingglassicon.png" alt="Magnifying Glass Icon">
         </div>
           <div class="row">
             <h2 class="big title"> User Research </h2>
             <p> In order to determine which features the app must have from the beginning, I surveyed users to see how they currently use similar cloud storage technology. From these surveys I wanted to understand if there were currently any blockers for people not using cloud storage that could be addressed by my designs. For those users familiar with cloud storage I wanted to know their most used features are so I could better understand what best serves users needs. </p>
           </div>
-          <div class="images">
-            <img src="images/Donutchart.png" alt="Graph 1">
+          <div class="images-graphs">
+            <figure class="gallery-item gallery-item--1">
+            <img src="images/Donutchart.png" class="graph_img" alt="Graph 1">
+          </figure>
+          <figure class="gallery-item gallery-item--2">
             <img src="images/Desktop.png" alt="Graph 2">
+          </figure>
           </div>
           <div class="small row">
             <p> The survey responses showed that users familiar with cloud storage mostly used it for saving images and documents. These findings helped develop the minimum viable product.</p>
@@ -114,7 +132,7 @@
           <div class="row">
             <p> The world of cloud storage has many competitors offering much for Quartz to learn from and build upon. Creating a SWOT analysis of some of the industry leaders like Dropbox, Sugarsync, and Google Drive, can shed light on what works well and what needs improvement. Gaining a better understanding of the field can help me make the right design decisions early and avoid making similar mistakes. </p>
           </div>
-          <div class="images">
+          <div class="images-competitors">
             <img src="images/DropboxLogo.png" alt="Dropbox Logo">
             <img src="images/SugarSyncLogo.png" alt="Sugarsync Logo">
             <img src="images/googledrivelogo.png" alt="Google Drive Logo">
@@ -122,6 +140,7 @@
           <div class="medium row">
             <p> From the analysis it was clear that Quartz could enter the arena by creating a more open environment for file sharing and by providing competitive pricing for increased storage space. We want to get users engaged and talking about Quartz to help increase the base users. </p>
           </div>
+        </div>
           <h2 class="big title"> User Personas </h2>
             <div class="row">
               <p> Please meet the user personas that demonstrate some of my potential users and their needs. Based on the results of my user survey, these personas help explore and personalize the different types of people who will engage with my product. </p>
@@ -155,6 +174,7 @@
               <p> With the groundwork of research laid out, I created user stories based on everything I gathered of our potential users. Listing out each task and the level of importance helped shape what would become the minimum viable product (MVP). You can take a closer look at the user stories here. </p>
           </div>
         </section>
+        -->
         <!-- Information Architecture -->
         <section id="informationarchitecture" class="anchor">
           <div class="icon">
@@ -267,5 +287,6 @@
      </ul>
      </div>
     </footer>
+  -->
   </body>
 </html>
